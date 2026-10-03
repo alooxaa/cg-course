@@ -12,6 +12,7 @@ cg-course/
 ├── week02/               VAO/VBO, первые треугольники, сетка
 ├── week03/               атрибут цвета, интерполяция, ошибки шейдеров
 │   └── shaders/          GLSL-файлы (читаются во время работы)
+├── docs/results/         скриншоты и вывод консоли запусков
 └── README.md
 ```
 
@@ -82,6 +83,15 @@ cmake --build build
 | V | включить/выключить VSync (видно, как меняется FPS) |
 | Esc | выход |
 
+**Результат** (AMD Radeon Graphics, OpenGL 3.3 Core):
+
+| Анимированный фон | Space — белый фон |
+|---|---|
+| ![](docs/results/week01_animated_background.png) | ![](docs/results/week01_white_background.png) |
+
+Без VSync ~2100–3000 FPS, с VSync — 165 FPS (частота монитора).
+Полный вывод консоли: [week01_console.txt](docs/results/week01_console.txt).
+
 ---
 
 ## Неделя 2 — VAO, VBO и первые треугольники
@@ -124,6 +134,23 @@ cmake --build build
 | W | каркасный режим (видны диагонали клеток) |
 | Esc | выход |
 
+**Результат — треугольники:**
+
+| `GL_TRIANGLES` | L — `GL_LINE_LOOP` |
+|---|---|
+| ![](docs/results/week02_triangles_fill.png) | ![](docs/results/week02_triangles_line_loop.png) |
+| **W — wireframe** | **C — другая палитра** |
+| ![](docs/results/week02_triangles_wireframe.png) | ![](docs/results/week02_triangles_palette.png) |
+
+**Результат — сетка 3×4:**
+
+| Обычный режим | W — wireframe | Узкое окно 500×800 |
+|---|---|---|
+| ![](docs/results/week02_grid.png) | ![](docs/results/week02_grid_wireframe.png) | ![](docs/results/week02_grid_tall_window.png) |
+
+Вывод консоли: [треугольники](docs/results/week02_triangles_console.txt),
+[сетка](docs/results/week02_grid_console.txt).
+
 ---
 
 ## Неделя 3 — шейдеры: атрибут цвета и интерполяция
@@ -156,9 +183,23 @@ cmake --build build
 | B | загрузить `broken.frag` → в консоли лог ошибки с номером строки |
 | Esc | выход |
 
-Пример вывода по клавише B:
+**Результат:**
+
+| Интерполяция цвета | I — инверсия |
+|---|---|
+| ![](docs/results/week03_gradient.png) | ![](docs/results/week03_inverted.png) |
+| **U — один цвет на всех вершинах** | **После B: сломанный шейдер не загрузился, работает прежний** |
+| ![](docs/results/week03_same_color.png) | ![](docs/results/week03_after_broken_shader.png) |
+
+Вывод в консоль по клавише B
+(полностью — [week03_console.txt](docs/results/week03_console.txt)):
 
 ```
-[compile error] .../week03/shaders/broken.frag
+[compile error] <repo>/week03/shaders/broken.frag
+Fragment shader failed to compile with the following errors:
 ERROR: 0:13: error(#143) Undeclared identifier: vertexColour
+ERROR: error(#273) 1 compilation errors.  No code generated
+Keeping the previous working shader
 ```
+
+`0:13` — ошибка в строке 13 файла `broken.frag`.

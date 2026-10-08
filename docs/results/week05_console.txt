@@ -1,0 +1,16 @@
+# week05: 2, 3, Tab, Tab, 4, 5, 1, P, P, P, P, Esc
+
+## stdout
+Controls: 1-5 scene, P primitive, Tab wireframe, Esc quit
+Scene 1: quad: 4 vertices, 6 indices
+Scene 2: indices {0,1,2}, count 3
+Scene 3: pentagon: 5 vertices, 9 indices
+Polygon mode: GL_LINE
+Polygon mode: GL_FILL
+Scene 4: two quads, one VAO
+Scene 5: two quads, opposite orbits
+Scene 1: quad: 4 vertices, 6 indices
+Primitive: GL_LINE_LOOP
+Primitive: GL_LINE_STRIP
+Primitive: GL_POINTS
+Primitive: GL_TRIANGLES

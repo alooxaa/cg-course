@@ -1,0 +1,74 @@
+Internal ctest changing into directory: /mnt/c/Users/Yermukasan/education/Computer Graphics/cg-course/build/week09-check
+Test project /mnt/c/Users/Yermukasan/education/Computer Graphics/cg-course/build/week09-check
+    Start 1: week09_camera
+1/1 Test #1: week09_camera ....................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.06 sec
+PASS: WASD, vertical modes, sprint, 30/60/144/1000 FPS, lookAt singularities
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+OpenGL: 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+Renderer: llvmpipe (LLVM 21.1.8, 256 bits)
+Task 1: WASD, R reset, V vsync, Esc exit
+O: fixed direction / look at origin
+Capture: build/week09-check/task1_initial.ppm | camPos = (0, 0, 3)
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+OpenGL: 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+Renderer: llvmpipe (LLVM 21.1.8, 256 bits)
+Task 1: WASD, R reset, V vsync, Esc exit
+O: fixed direction / look at origin
+Capture: build/week09-check/task1_left.ppm | camPos = (-2.5, 0, 3)
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+OpenGL: 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+Renderer: llvmpipe (LLVM 21.1.8, 256 bits)
+Task 1: WASD, R reset, V vsync, Esc exit
+O: fixed direction / look at origin
+Capture: build/week09-check/task1_orbit.ppm | camPos = (-2.5, 0, 3)
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+OpenGL: 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+Renderer: llvmpipe (LLVM 21.1.8, 256 bits)
+Task 2: WASD, R reset, V vsync, Esc exit
+Space/Left Shift: up/down; U: world Y / camUp
+Capture: build/week09-check/task2_up.ppm | camPos = (0, 2.5, 3)
+libEGL warning: failed to get driver name for fd -1
+
+libEGL warning: MESA-LOADER: failed to retrieve device information
+
+libEGL warning: failed to get driver name for fd -1
+
+MESA: error: ZINK: failed to choose pdev
+libEGL warning: egl: failed to create dri2 screen
+OpenGL: 4.5 (Core Profile) Mesa 26.0.8-1ubuntu0.3
+Renderer: llvmpipe (LLVM 21.1.8, 256 bits)
+Task 3: WASD, R reset, V vsync, Esc exit
+Left Ctrl: sprint x2; B: multiply by 2 before/after dt
+Capture: build/week09-check/task3_sprint.ppm | camPos = (0, 0, -2)

@@ -13,6 +13,7 @@ cg-course/
 ├── week03/               атрибут цвета, интерполяция, ошибки шейдеров
 │   └── shaders/          GLSL-файлы (читаются во время работы)
 ├── week05/               индексный буфер (EBO), glDrawElements
+├── week09/               камера lookAt, движение вверх/вниз и бег
 ├── docs/results/         скриншоты и вывод консоли запусков
 └── README.md
 ```
@@ -56,6 +57,9 @@ cmake --build build
 | 2 | `week02_triangles`, `week02_grid` |
 | 3 | `week03` |
 | 5 | `week05` |
+| 9 | `week09_task1`, `week09_task2`, `week09_task3` |
+
+Неделя 9: [сборка и управление](week09/README.md), [результаты](week09/results.md).
 
 Если после правки `CMakeLists.txt` что-то странно ломается — удалите папку
 `build` и сконфигурируйте заново.

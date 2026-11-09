@@ -1,0 +1,7 @@
+add_executable(week10 main.cpp)
+target_link_libraries(week10 PRIVATE cg_deps)
+if(BUILD_TESTING)
+    add_executable(week10_camera_tests camera_tests.cpp)
+    target_link_libraries(week10_camera_tests PRIVATE glm::glm)
+    add_test(NAME week10_camera COMMAND week10_camera_tests)
+endif()
